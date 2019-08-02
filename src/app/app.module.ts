@@ -27,11 +27,15 @@ import { IonicImageLoader } from 'ionic-image-loader';
 import {ProfilViewMenuPage} from '../pages/profil-view-menu/profil-view-menu';
 // import { ApiModule } from '../.';
 import {ProfileService} from "../api/profile.service";
+import { Calendar } from '@ionic-native/calendar/ngx';
+import {CallendarProfillPage} from '../pages/callendar-profill/callendar-profill';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ProfilViewMenuPage,
+    CallendarProfillPage,
   ],
   imports: [
     BrowserModule,
@@ -49,11 +53,13 @@ import {ProfileService} from "../api/profile.service";
     MyApp,
     HomePage,
     ProfilViewMenuPage,
+    CallendarProfillPage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+
     HttpClient,
     HttpClientModule,
     AuthServiceProvider,
@@ -62,6 +68,7 @@ import {ProfileService} from "../api/profile.service";
     RestProvider,
     SearchServiceProvider,
     ProfileService,
+    Calendar,
   ]
 })
 export class AppModule {}
