@@ -1,5 +1,8 @@
 {
   "name": "Klub",
-  "integrations": {},
-  "type": "ionic-angular"
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "77bede0b"
 }
